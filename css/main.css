@@ -280,6 +280,7 @@ nav ul li a {
 }
 
 #introduction p {
+    margin: 25px 0 25px 0;
     font-size: 1.625rem;
     text-align: center;
 }
@@ -332,7 +333,8 @@ nav ul li a {
     color: #000000;
 }
 
-#projects p a img {
+#projects p a img,
+#contact img {
     margin-left: 10px;
 }
 
@@ -376,6 +378,7 @@ nav ul li a {
 }
 
 #about p {
+    margin-top: 0;
     font-size: 1.625rem;
     text-align: left;
 }
@@ -424,10 +427,6 @@ h3 {
     padding-top: 40px;
 }
 
-#contact img {
-    margin-right: 6.2%;
-}
-
 
 /*
  * CONTACT FORM
@@ -436,8 +435,8 @@ h3 {
 input[type="text"],
 input[type="email"],
 textarea {
-    outline: none;
     width: 100%;
+    outline: none;
     margin-bottom: 20px;
     padding: 18px;
     border: 1px solid #dad8d6;
@@ -452,7 +451,6 @@ textarea {
 input[type="submit"] {
     background: none;
     border: none;
-    margin-right: 0.625rem;
     padding: 0;
 }
 
