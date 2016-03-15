@@ -2,16 +2,18 @@
 
 $(document).ready(function () {
 
-    //CHANGING THE OPACITY OF .navLogo ON HOVER
+    //CHANGING THE OPACITY OF '.navLogo' ON HOVER
 
-    //FADING THE UNDERLINE OF header ul li a ON HOVER
+    //FADING THE UNDERLINE OF 'header ul li a' ON HOVER
 
-    //SMOOTH SCROLLING TO INTRODUCTION ON CLICK .arrowDown
+    //'header ul li a' SMOOTH SCROLLING TO CORRESPONDING SECTION ON CLICK
 
-    //SMOOTH SCROLLING TO TOP ON CLICK .arrowUp
+    //'.arrowDown' SMOOTH SCROLLING TO INTRODUCTION ON CLICK
 
-    //'BOUNCE'/'POINT' .rightArrow AND .leftArrow ARROWS ON HOVER
+    //'.arrowUp' SMOOTH SCROLLING TO TOP ON CLICK
 
-    //'BOUNCE'/'POINT' .rightArrow AND .leftArrow ARROWS ON HOVER
+    //ANIMATE '.rightArrow' AND '.leftArrow' ARROWS ON HOVER
+
+    //HIGHLIGHTING THE '.socialMedia' ICONS ON HOVER
 
 });
