@@ -845,7 +845,9 @@ html {
         padding-left: 75px;
     }
     #introduction p,
-    #about p {
+    #about p,
+    #contact h3,
+    #projectDetails h3 {
         font-size: 2.25rem;
     }
     /*
@@ -910,7 +912,9 @@ html {
     }
     #projects h2,
     #about h2,
-    #contact h2 {
+    #contact h2,
+    #projectNavBottom .nextProject h2,
+    #projectNavBottom .previousProject h2 {
         font-size: 2.125rem;
         letter-spacing: 0.5rem;
     }
@@ -938,9 +942,6 @@ html {
     .aboutWrapper .six-twelfths p {
         margin-bottom: 10px;
     }
-    #about p {
-        font-size: 1.875rem;
-    }
     #about ul li,
     #contact ul li {
         font-size: 1.75rem;
@@ -950,7 +951,6 @@ html {
  */
     #contact h3,
     #projectDetails h3 {
-        font-size: 2.25rem;
         letter-spacing: 0.5rem;
     }
     #contact .socialMedia img {
@@ -984,17 +984,29 @@ html {
     #projectDetailsWrapper .three-twelfths {
         max-height: 350px;
     }
-    .img2Wrapper {
-        transform: translateY(-160px);
+    #projectDetails p {
+        font-size: 1.625rem;
     }
     #projectDetails .column {
         width: 100%;
     }
-    #projectDetails p {
-        font-size: 1.625rem;
-    }
     #projectDetails .column:last-child {
         margin-top: 25px;
+    }
+    /*
+ * PROJECT IMAGE WRAPPERS
+ */
+    .img2Wrapper {
+        transform: translateY(-160px);
+    }
+    .img4Wrapper img {
+        display: none;
+    }
+    .img4MobileSwitch {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        min-height: 860px;
     }
     .img6Wrapper {
         transform: translateY(-700px);
@@ -1002,12 +1014,10 @@ html {
     .img7Wrapper {
         transform: translateY(540px);
     }
+    /*
+ * PROJECT NAVIGATION
+ */
     #projectNavBottom p {
         font-size: 1.75rem;
-    }
-    #projectNavBottom .nextProject h2,
-    #projectNavBottom .previousProject h2 {
-        font-size: 2.125rem;
-        letter-spacing: 0.5rem;
     }
 }
