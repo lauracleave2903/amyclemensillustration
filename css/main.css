@@ -230,12 +230,12 @@ nav ul li {
     font-size: 1.125rem;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
-    border-bottom: solid 1px;
     margin-left: 6.2%;
 }
 
 nav ul li a {
     text-decoration: none;
+    border-bottom: solid 1px;
     color: #000000;
     text-align: right;
 }
@@ -309,6 +309,22 @@ nav ul li a {
 
 .projectsWrapper:last-child {
     margin-bottom: 0;
+}
+
+.celebPortraitsHero {
+    position: relative;
+    left: 400px;
+}
+
+.celebPortraitsText,
+.unmaskedSeriesText {
+    position: relative;
+    left: -480px;
+}
+
+.unmaskedSeriesHero {
+    position: relative;
+    left: 320px;
 }
 
 #projects h2 {
@@ -425,6 +441,11 @@ h3 {
 
 .socialMedia {
     padding-top: 40px;
+}
+
+#contact .socialMedia img {
+    margin-right: 10px;
+    margin-left: 0;
 }
 
 
@@ -774,4 +795,219 @@ html {
    RESP0NSIVE
    ========================================================================== */
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    /*
+ * GRID SYSTEM
+ */
+    .full-width,
+    .one-twelfth,
+    .two-twelfths,
+    .three-twelfths,
+    .four-twelfths,
+    .five-twelfths,
+    .six-twelfths,
+    .seven-twelfths,
+    .eight-twelfths,
+    .nine-twelfths,
+    .ten-twelfths,
+    .eleven-twelfths {
+        padding: 20px;
+    }
+    /*
+ * HEADER
+ */
+    header .two-twelfths {
+        width: 100%;
+        padding-left: 40px;
+    }
+    nav ul,
+    .arrowUp {
+        display: none;
+    }
+    .cover .three-twelfths {
+        display: none;
+    }
+    .cover .six-twelfths {
+        width: 100%;
+    }
+    .mainLogo {
+        top: 45%;
+    }
+    /*
+ * INTRODUCTION
+ */
+    #introduction .two-twelfths {
+        display: none;
+    }
+    #introduction .eight-twelfths {
+        width: 100%;
+        padding-right: 75px;
+        padding-left: 75px;
+    }
+    #introduction p,
+    #about p {
+        font-size: 2.25rem;
+    }
+    /*
+ * PROJECTS
+ */
+    #projects .four-twelfths,
+    #projects .five-twelfths,
+    #projects .six-twelfths,
+    #projects .seven-twelfths,
+    #projects .eight-twelfths,
+    #about .three-twelfths,
+    #about .six-twelfths,
+    #contact .three-twelfths,
+    #contact .six-twelfths,
+    #contact .eleven-twelfths,
+    #projectDetailsWrapper .three-twelfths,
+    #projectDetailsWrapper .four-twelfths,
+    #projectDetailsWrapper .five-twelfths,
+    #projectDetailsWrapper .six-twelfths,
+    #projectDetailsWrapper .seven-twelfths,
+    #projectDetailsWrapper .eight-twelfths {
+        width: 100%;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    #projects .six-twelfths,
+    #projects .seven-twelfths,
+    #projects .eight-twelfths {
+        text-align: center;
+    }
+    .celebPortraitsHero,
+    .celebPortraitsText,
+    .unmaskedSeriesHero,
+    .unmaskedSeriesText {
+        left: 0;
+    }
+    #projects .six-twelfths img,
+    #projects .seven-twelfths img,
+    #projects .eight-twelfths img,
+    #projectDetailsWrapper .img1Wrapper img,
+    #projectDetailsWrapper .img3Wrapper img,
+    #projectDetailsWrapper .img4Wrapper img,
+    #projectDetailsWrapper .img5Wrapper img,
+    #projectDetailsWrapper .img6Wrapper img,
+    #projectDetailsWrapper .img7Wrapper img,
+    #projectDetailsWrapper .img8Wrapper img {
+        width: 100%;
+    }
+    header .five-twelfths,
+    #projects .one-twelfth,
+    #projects .two-twelfths,
+    #projects .three-twelfths,
+    #about .one-twelfth,
+    #about .five-twelfths,
+    #contact .one-twelfth,
+    #projectDetailsWrapper .one-twelfth,
+    #projectDetailsWrapper .two-twelfths,
+    #projectDetailsWrapper .img1 .four-twelfths,
+    #projectDetailsWrapper .zeroHeight .four-twelfths,
+    #projectDetailsWrapper .img5 .five-twelfths {
+        display: none;
+    }
+    #projects h2,
+    #about h2,
+    #contact h2 {
+        font-size: 2.125rem;
+        letter-spacing: 0.5rem;
+    }
+    #projects p {
+        font-size: 1.875rem;
+        margin-top: 15px;
+    }
+    /*
+ * PROJECTS IMAGE LAYOUT
+ */
+    .moveRight1,
+    .moveLeft1,
+    .moveRight2,
+    .moveLeft2,
+    .moveRight3 {
+        transform: translateX(0);
+        padding-top: 0;
+    }
+    /*
+ * ABOUT
+ */
+    .aboutWrapper {
+        margin-bottom: 0;
+    }
+    .aboutWrapper .six-twelfths p {
+        margin-bottom: 10px;
+    }
+    #about p {
+        font-size: 1.875rem;
+    }
+    #about ul li,
+    #contact ul li {
+        font-size: 1.75rem;
+    }
+    /*
+ * CONTACT
+ */
+    #contact h3,
+    #projectDetails h3 {
+        font-size: 2.25rem;
+        letter-spacing: 0.5rem;
+    }
+    #contact .socialMedia img {
+        margin-right: 20px;
+    }
+    /*
+ * CONTACT FORM
+ */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1.625rem;
+        padding-bottom: 25px;
+    }
+    textarea {
+        min-height: 250px;
+    }
+    input[type="submit"] {
+        font-size: 1.625rem;
+        margin-bottom: 10px;
+    }
+    /*
+ * FOOTER
+ */
+    footer p {
+        font-size: 1.125rem;
+    }
+    /*
+ * PROJECT DETAILS
+ */
+    #projectDetailsWrapper .three-twelfths {
+        max-height: 350px;
+    }
+    .img2Wrapper {
+        transform: translateY(-160px);
+    }
+    #projectDetails .column {
+        width: 100%;
+    }
+    #projectDetails p {
+        font-size: 1.625rem;
+    }
+    #projectDetails .column:last-child {
+        margin-top: 25px;
+    }
+    .img6Wrapper {
+        transform: translateY(-700px);
+    }
+    .img7Wrapper {
+        transform: translateY(540px);
+    }
+    #projectNavBottom p {
+        font-size: 1.75rem;
+    }
+    #projectNavBottom .nextProject h2,
+    #projectNavBottom .previousProject h2 {
+        font-size: 2.125rem;
+        letter-spacing: 0.5rem;
+    }
+}
