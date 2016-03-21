@@ -218,6 +218,14 @@ header {
     position: fixed;
 }
 
+.navLogoOpacity {
+    opacity: 1.0;
+}
+
+.navLogoOpacity:hover {
+    opacity: 0.25;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -309,6 +317,14 @@ nav ul li a {
 
 .projectsWrapper:last-child {
     margin-bottom: 0;
+}
+
+.imgFade {
+    opacity: 1.0;
+}
+
+.imgFade:hover {
+    opacity: 0.25;
 }
 
 .celebPortraitsHero {
@@ -434,7 +450,7 @@ h3 {
 }
 
 #contact h3,
-#projectDetails h3 {
+#projectDetails h2 {
     font-size: 1.625rem;
     margin-bottom: 0;
 }
@@ -847,7 +863,7 @@ html {
     #introduction p,
     #about p,
     #contact h3,
-    #projectDetails h3 {
+    #projectDetails h2 {
         font-size: 2.25rem;
     }
     /*
@@ -950,7 +966,7 @@ html {
  * CONTACT
  */
     #contact h3,
-    #projectDetails h3 {
+    #projectDetails h2 {
         letter-spacing: 0.5rem;
     }
     #contact .socialMedia img {
