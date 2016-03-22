@@ -1131,8 +1131,8 @@ html {
     /*
  * FONTS
     */
-    #introduction .row .eight-twelfths p,
-    #about .aboutWrapper .row .six-twelfths p,
+    #introduction p,
+    #about p,
     #projects p {
         font-size: 1.5rem;
     }
