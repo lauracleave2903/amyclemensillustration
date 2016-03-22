@@ -1126,3 +1126,55 @@ html {
         display: none;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    /*
+ * FONTS
+    */
+    #introduction p,
+    #about p,
+    #contact h3,
+    #projectDetails h2 {
+        font-size: 1.875rem;
+    }
+    #projects h2,
+    #about h2,
+    #contact h2,
+    #projectNavBottom .nextProject h2 {
+        font-size: 1.75rem;
+        letter-spacing: 0.313rem;
+    }
+    #projects p {
+        font-size: 1.5rem;
+    }
+    #about ul li,
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"],
+    #contact ul li,
+    #projectNavBottom .nextProject p {
+        font-size: 1.375rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+    #projectDetails p {
+        font-size: 1.25rem;
+    }
+    /*
+ * CONTACT
+    */
+    #contact .socialMedia img {
+        min-height: 50px;
+    }
+    /*
+ * PROJECT IMAGE WRAPPERS
+ */
+    .img6Wrapper {
+        transform: translateY(-520px);
+    }
+    .img7Wrapper {
+        transform: translateY(215px);
+    }
+}
