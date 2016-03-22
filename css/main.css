@@ -1131,11 +1131,6 @@ html {
     /*
  * FONTS
     */
-    #introduction p,
-    #about p,
-    #projects p {
-        font-size: 1.5rem;
-    }
     #projects h2,
     #about h2,
     #contact h2,
