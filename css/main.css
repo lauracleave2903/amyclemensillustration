@@ -223,7 +223,8 @@ header {
 }
 
 .navLogoOpacity:hover {
-    opacity: 0.25;
+    opacity: 0.5;
+    transition-duration: 0.5s;
 }
 
 nav ul {
@@ -243,9 +244,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    border-bottom: solid 1px;
+    border-bottom: solid 2px;
     color: #000000;
     text-align: right;
+    transition: all ease-in 0.20s;
+}
+
+nav ul li a:hover {
+    border-bottom: solid 2px transparent;
 }
 
 .mainLogo {
@@ -255,11 +261,29 @@ nav ul li a {
     transform: translate(-50%, -50%);
 }
 
+.mainLogo img {
+    width: 100%;
+}
+
 .arrowDown {
     width: 100%;
     position: absolute;
     bottom: 25px;
     text-align: center;
+}
+
+.arrowDownNudge:hover {
+    animation: arrowDownNudge 0.5s linear alternate;
+}
+
+@keyframes arrowDownNudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -25px);
+    }
 }
 
 
@@ -309,6 +333,21 @@ nav ul li a {
     right: 25px;
     bottom: 25px;
     z-index: 999;
+    opacity: 0;
+}
+
+.arrowUpNudge:hover {
+    animation: arrowUpNudge 0.5s linear alternate;
+}
+
+@keyframes arrowUpNudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -25px);
+    }
 }
 
 .projectsWrapper {
@@ -325,6 +364,8 @@ nav ul li a {
 
 .imgFade:hover {
     opacity: 0.25;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
 }
 
 .celebPortraitsHero {
@@ -368,6 +409,20 @@ nav ul li a {
 #projects p a img,
 #contact img {
     margin-left: 10px;
+}
+
+.rightArrow:hover {
+    animation: rightArrowNudge 0.5s linear alternate;
+}
+
+@keyframes rightArrowNudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(15px, 0);
+    }
 }
 
 
@@ -462,6 +517,7 @@ h3 {
 #contact .socialMedia img {
     margin-right: 10px;
     margin-left: 0;
+    transition: all linear 0.25s;
 }
 
 
@@ -472,6 +528,7 @@ h3 {
 input[type="text"],
 input[type="email"],
 textarea {
+    font-size: 1.125rem;
     width: 100%;
     outline: none;
     margin-bottom: 20px;
@@ -486,6 +543,7 @@ textarea {
 }
 
 input[type="submit"] {
+    font-size: 1.125rem;
     background: none;
     border: none;
     padding: 0;
@@ -614,6 +672,32 @@ footer p {
     margin-right: 0;
     margin-left: 10px;
 }
+
+.leftArrow:hover {
+    animation: leftArrowNudge 0.5s linear alternate;
+}
+
+@keyframes leftArrowNudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-15px, 0);
+    }
+}
+
+
+/*
+ * JQUERY CLASSES
+ */
+
+
+/*.arrowUpFade {
+    opacity: 1.0;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}*/
 
 
 /* ==========================================================================
@@ -847,6 +931,7 @@ html {
         width: 100%;
     }
     .mainLogo {
+        width: 75%;
         top: 45%;
     }
     /*
@@ -971,6 +1056,7 @@ html {
     }
     #contact .socialMedia img {
         margin-right: 20px;
+        min-height: 75px;
     }
     /*
  * CONTACT FORM
@@ -978,14 +1064,14 @@ html {
     input[type="text"],
     input[type="email"],
     textarea {
-        font-size: 1.625rem;
+        font-size: 1.75rem;
         padding-bottom: 25px;
     }
     textarea {
         min-height: 250px;
     }
     input[type="submit"] {
-        font-size: 1.625rem;
+        font-size: 1.75rem;
         margin-bottom: 10px;
     }
     /*
@@ -1035,5 +1121,8 @@ html {
  */
     #projectNavBottom p {
         font-size: 1.75rem;
+    }
+    .hideForMobile {
+        display: none;
     }
 }
