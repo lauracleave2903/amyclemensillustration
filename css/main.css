@@ -1131,8 +1131,6 @@ html {
     /*
  * FONTS
     */
-    #introduction p,
-    #about p,
     #contact h3,
     #projectDetails h2 {
         font-size: 1.875rem;
@@ -1144,6 +1142,8 @@ html {
         font-size: 1.75rem;
         letter-spacing: 0.313rem;
     }
+    #introduction p,
+    #about p,
     #projects p {
         font-size: 1.5rem;
     }
