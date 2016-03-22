@@ -1131,9 +1131,10 @@ html {
     /*
  * FONTS
     */
-    #contact h3,
-    #projectDetails h2 {
-        font-size: 1.875rem;
+    #introduction p,
+    #about p,
+    #projects p {
+        font-size: 1.5rem;
     }
     #projects h2,
     #about h2,
@@ -1142,10 +1143,9 @@ html {
         font-size: 1.75rem;
         letter-spacing: 0.313rem;
     }
-    #introduction p,
-    #about p,
-    #projects p {
-        font-size: 1.5rem;
+    #contact h3,
+    #projectDetails h2 {
+        font-size: 1.875rem;
     }
     #about ul li,
     input[type="text"],
